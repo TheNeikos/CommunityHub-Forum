@@ -1,0 +1,12 @@
+{
+  "name": "communityhub-core",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.3"
+  },
+  "dependencies": {
+    "mongoose": "~3.8.8",
+    "express": "~3.5.0",
+    "mongoose-schema-extend": "~0.1.7"
+  }
+}
