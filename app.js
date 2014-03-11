@@ -3,6 +3,12 @@ var db = require("./lib/database");
 
 var app = express();
 
+app.version = {
+    MAJOR: 0,
+    MINOR: 0,
+    PATCH: 1
+};
+
 require("./lib/user")(app);
 require('./lib/modules')(app);
 
