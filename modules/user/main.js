@@ -1,3 +1,5 @@
+var routes = require('./routes');
+
 module.exports = {
     name: 'User',
     author: '',
@@ -12,9 +14,10 @@ module.exports = {
         PATCH: 1
     },
     description: "Registers the schema and paths for the User.",
-    init: function(schemaStore){
+    init: function(schemaStore, application){
         this.methods.registerUserSchema(schemaStore);
     },
+    routes: require('./routes'),
     methods: {
         registerUserSchema: function(schemaStore){
             schemaStore.schemas["User"] = require('./user_schema');

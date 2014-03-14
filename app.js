@@ -9,7 +9,6 @@ app.version = {
     PATCH: 1
 };
 
-require("./lib/user")(app);
 require('./lib/modules')(app);
 
 var server = app.listen(3000, function () {

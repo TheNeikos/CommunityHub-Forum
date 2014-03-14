@@ -1,7 +1,7 @@
-var mongoose = require("mongoose");
-var User = mongoose.model("User");
-
 module.exports = function(app){
+
+    var mongoose = require("mongoose");
+    var User = mongoose.model("User");
 
     app.get('/api/users/', function(req, res){
         //TODO: Add Settings check for public member list. Does it need to be flexible? Aka, on load or runtime?
