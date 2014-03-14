@@ -43,14 +43,7 @@ var UserSchema = new Schema({
     sessions: [SessionSchema]
 });
 
-UserSchema.methods.test = function(){
-    console.log('Not what I want');
-}
 
-var UserModel = mongoose.model('User', UserSchema);
 
-module.exports = {
-    UserSessionSchema:SessionSchema,
-    UserSchema: UserSchema,
-    UserModel: UserModel
-};
+module.exports = UserSchema;
+
