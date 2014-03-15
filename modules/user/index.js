@@ -13,12 +13,8 @@ module.exports = {
     },
     description: "Registers the schema and paths for the User.",
     init: function(schemaStore){
-        this.methods.registerUserSchema(schemaStore);
+        schemaStore.schemas["User"] = require('./user_schema');
     },
     routes: require('./routes'),
-    methods: {
-        registerUserSchema: function(schemaStore){
-            schemaStore.schemas["User"] = require('./user_schema');
-        }
-    }
+    methods: {}
 };

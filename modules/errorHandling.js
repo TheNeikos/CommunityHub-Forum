@@ -14,11 +14,10 @@ module.exports = {
         PATCH: 1
     },
     description: "Settings for error handling.",
-    settings: {},
-    _settings: {
+    defaultSettings: {
         logClientErrors: true
     },
     init: function(settings){
-        this.settings = settings.getFor(this);
+        settings.methods.getFor(this);
     }
 };
