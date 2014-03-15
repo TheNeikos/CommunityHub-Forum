@@ -4,8 +4,11 @@ CommunityHub Core
 This is the core part for the community hub. It will only have the required modules installed.
 
 
-Participating
--------------
+Contributing
+------------
 
-To participate you will need to fork this repository, make some changes and then push those to your own branch.
-Then you can do a Pull Request which will be reviewed.
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
